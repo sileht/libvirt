@@ -9637,6 +9637,7 @@ virDomainNetDefParseXML(virDomainXMLOptionPtr xmlopt,
 
         def->data.vhostuser->type = VIR_DOMAIN_CHR_TYPE_UNIX;
         def->data.vhostuser->data.nix.path = vhostuser_path;
+
         vhostuser_path = NULL;
 
         if (STREQ(vhostuser_mode, "server")) {
